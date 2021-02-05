@@ -3,7 +3,7 @@ layout: none
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="{{ '/sitemap.xsl' | relative_url }}"?>
 
 <!-- Source: https://github.com/jekyll/jekyll-sitemap/blob/master/lib/sitemap.xml -->
 
