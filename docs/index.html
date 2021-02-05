@@ -1,58 +1,19 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Huby</title>
-    <meta name="theme-color" content="#FF890B">
-    <meta name="apple-mobile-web-app-status-bar-style" content="white">
-    <meta property="og:image" content="/assets/img/logo-2000.jpg?h=683592813e25479e34b6fdd21e383a0f">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png?h=b6a1abb5b663fc7060bf6c4c32141858">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png?h=b1aa42abe1e79f66384e4fc40a002c0a">
-    <link rel="icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon.png?h=9ad5d1ff1c548de81a62f1c487f0dbe7">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-chrome-192x192.png?h=0f296b6c13a575a612f19bdc0f63a721">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/android-chrome-512x512.png?h=45dad57bfe94c46e489a7d4d68cd8f0a">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    <link rel="manifest" href="/manifest.json?h=b3474cdd06fbf95feafeafba682bef42">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="/assets/css/Footer-Dark.css?h=cabc25193678a4e8700df5b6f6e02b7c">
-    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css?h=bd36a0e1e15ca19cbc401cc5f46ca8ca">
-    <link rel="stylesheet" href="/assets/css/styles.css?h=7dfab40614f0126bd19e5cde8f618010">
-<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="/assets/img/apple-touch-icon-precomposed.png" />
+    {% include head.html %}
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
-        <div class="container"><a class="navbar-brand" href="#" style="margin-right: 32px;">Huby</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="produkte">Produkte</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="hubypulli">Huby Pulli</a><a class="dropdown-item" href="t-shirt">T-Shirt</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="bildervideos">Bilder &amp; Videos</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="bilder">Bilder</a><a class="dropdown-item" href="videos">Videos</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="kollektionen">Kollektionen</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="1.kollektion">1. Kollektion</a><a class="dropdown-item" href="2.kollektion">2. Kollektion</a><a class="dropdown-item" href="3.kollektion">3. Kollektion</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="infos">Infos</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="unternehmen">Unternehmen</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="mitarbeiter">Mitarbeiter</a><a class="dropdown-item" href="geschichte">Geschichte</a><a class="dropdown-item" href="#">Third Item</a></div>
-                    </li>
-                     <li class="nav-item"><a class="nav-link" href="/">Kontakt</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    {% include navigation.html %}
+
     <div style="background: black;">
         <div class="row no-gutters justify-content-center align-items-center">
-            <div class="col text-center align-self-center"><img class="img-fluid" src="/assets/img/icon.svg?h=f67a8280a6c2d1e3c7d0aba9ca5a8102" style="max-height: 40vh;margin-bottom: 2vh;text-align: center;"></div>
+            <div class="col text-center align-self-center"><img class="img-fluid" src="{{ '/assets/img/icon.svg?h=f67a8280a6c2d1e3c7d0aba9ca5a8102' | relative_url }}" style="max-height: 40vh;margin-bottom: 2vh;text-align: center;"></div>
         </div>
     </div>
     <div class="container" style="padding: 30px;">
@@ -65,46 +26,9 @@
             <br>
             Diese Seite ist noch im Aufbau. Bitte habt Geduld...
         </p>
-    </div><button class="btn btn-primary" id="scrolltotopbutton" type="button" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="/search">Suche</a></li>
-                            <li><a href="/sitemap.xml">Sitemap</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="/firma">Firma</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="/impressum">Impressum</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Produkte</h3>
-                        <ul>
-                            <li><a href="/pullover">Pullover</a></li>
-                            <li><a href="t-shirt">T-Shirt</a></li>
-                            <li><a href="/cap">Cap</a></li>
-                        </ul>
-                    </div>
-                    <div class="col item social"><a href="https://vm.tiktok.com/ZMJt6JQSm/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-tiktok" style="margin-top: -7px;margin-left: 1px;">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5"></path>
-                            </svg></a><a href="https://www.snapchat.com/add/lhubacher8"><i class="fab fa-snapchat-ghost"></i></a><a href="https://instagram.com/huby_ch_official"><i class="fab fa-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Lars Hubacher &amp; Rafael Urben © 2021</p>
-            </div>
-        </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/scripts.js?h=fa982cdde8a80b69a416358d0648caf0"></script>
+
+    {% include footer.html %}
 </body>
 
 </html>
