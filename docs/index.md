@@ -1,5 +1,6 @@
 ---
 layout: raw
+title: Home
 ---
 
 <div style="background: black;">
