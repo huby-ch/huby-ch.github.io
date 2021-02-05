@@ -1,0 +1,22 @@
+---
+---
+{
+    "short_name": "Huby",
+    "name": "Huby",
+    "icons": [
+        {
+            "src": "{{ '/assets/img/android-chrome-192x192.png?h=0f296b6c13a575a612f19bdc0f63a721' | relative_url }}",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "{{ '/assets/img/android-chrome-512x512.png?h=45dad57bfe94c46e489a7d4d68cd8f0a' | relative_url }}",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "{{ '/' | relative_url }}",
+    "background_color": "#FF890B",
+    "theme_color": "#FF890B",
+    "display": "standalone"
+}
