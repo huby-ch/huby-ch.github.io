@@ -22,3 +22,14 @@
   background-color: #CC6D08;
 }
 
+.content>.container {
+  padding: 30px 0;
+}
+
+.content {
+  background-color: white;
+}
+
+body {
+  background-color: #282d32;
+}
