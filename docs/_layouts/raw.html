@@ -11,6 +11,14 @@
 <body>
     {% include navigation.html %}
 
+    <div style="background: black;">
+        <div class="row no-gutters justify-content-center align-items-center">
+            <div class="col text-center align-self-center"><img class="img-fluid"
+                    src="{{ '/assets/img/icon.svg?h=f67a8280a6c2d1e3c7d0aba9ca5a8102' | relative_url }}"
+                    style="max-height: 40vh;margin-bottom: 2vh;text-align: center;"></div>
+        </div>
+    </div>
+
     {{ content }}
 
     {% include footer.html %}
