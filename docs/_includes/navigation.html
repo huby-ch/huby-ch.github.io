@@ -16,13 +16,6 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="">Bilder &amp; Videos</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ '/bilder' | relative_url }}">Bilder</a>
-                        <a class="dropdown-item" href="{{ '/videos' | relative_url }}">Videos</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
                     <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="">Kollektionen</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{ '/kollektionen/1' | relative_url }}">1. Kollektion</a>
@@ -30,20 +23,16 @@
                         <a class="dropdown-item" href="{{ '/kollektionen/3' | relative_url }}">3. Kollektion</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="">Infos</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">First Item</a>
-                        <a class="dropdown-item" href="#">Second Item</a>
-                        <a class="dropdown-item" href="#">Third Item</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/infos' | relative_url }}">Infos</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="">Unternehmen</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{ '/unternehmen' | relative_url }}">Unternehmen</a>
-                        <a class="dropdown-item" href="{{ '/mitarbeiter' | relative_url }}">Mitarbeiter</a>
-                        <a class="dropdown-item" href="{{ '/geschichte' | relative_url }}">Geschichte</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ '/unternehmen/team' | relative_url }}">Team</a>
+                        <a class="dropdown-item" href="{{ '/unternehmen/geschichte' | relative_url }}">Geschichte</a>
                     </div>
                 </li>
                 <li class="nav-item">
