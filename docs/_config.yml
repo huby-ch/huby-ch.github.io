@@ -1,3 +1,19 @@
 url: https://huby-ch.github.io
 title: Huby
 description: Eine Webseite
+defaults:
+  -
+    scope: 
+      type: "pages"
+    values:
+      description: "Keine Beschribung vorhanden"
+  - 
+    scope: 
+      path: "produkte"
+    values:
+      allowsearch: true
+  - 
+    scope: 
+      path: "kollektionen"
+    values:
+      allowsearch: true

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+description: Willkommen!
+allowsearch: true
 ---
 
 
